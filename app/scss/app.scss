@@ -15,7 +15,32 @@
 	--color-first: #222;
 	--color-second: #a9ff00;
 
-} 
+}
+
+@font-face {
+	font-family: 'Maza';
+	src: url('../fonts/Maza/MazaRegular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Maza';
+	src: url('../fonts/Maza/MazaBold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TenorSans';
+	src: url('../fonts/TenorSans/TenorSans.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
 
 html, body {
 	width: 100%;
@@ -24,6 +49,7 @@ html, body {
 	background: var(--color-first);
 	color: var(--color-second);
 	font-size: 18px;
+	font-family: 'TenorSans';
 
 	@media (min-width: 1921px) {
 		font-size: var(--index);
@@ -50,15 +76,9 @@ body.lock {
 	}
 }
 
-.section {
-	
-	padding: calc(var(--index) * 7) 0 0 0;
 
-	@media (max-width: 1200px) {padding-top: calc(var(--index) * 5);}
-	@media (max-width: 990px) { padding-top: calc(var(--index) * 4);}
-	@media (max-width: 768px) { padding-top: calc(var(--index) * 3);}
-	@media (max-width: 576px) { padding-top: calc(var(--index) * 2);}
-
+button {
+	font-family: 'Maza';
 }
 
 a {
@@ -73,11 +93,7 @@ img {
 	object-fit: cover;
 }
 
-// @import parts
-
 @import 'scrollbar';
 
 @import 'burger';
 @import 'header';
-
-@import 'footer';
