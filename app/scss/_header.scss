@@ -52,5 +52,148 @@
 
 	} // header-top
 
+	&-center {
+
+		padding: 16px 0 24px;
+		
+		.container {
+			display: flex;	
+		}
+
+		&-first {
+			flex-basis: 115px;
+		}
+
+		&-second {
+			
+			display: flex;
+			flex-direction: column;
+			flex-basis: 900px;
+			gap: 16px;
+
+
+			&-top {
+				display: flex;
+				height: 48px;
+				gap: 16px;
+			}
+		
+			.burger {
+
+				width: 100px;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 8px;
+				background: var(--color-hover);
+
+				&__element {
+					width: 41px;
+					height: 16px;
+					background: url('../images/dest/icons/burger.svg') no-repeat;
+				}
+
+			} // burger
+
+			.search {
+
+				position: relative;
+				flex-basis: 654px;
+				height: 100%;
+				border-radius: 8px;
+				border: 1px solid rgba(72, 136, 255, .2);
+
+				&__input {
+					display: block;
+					width: 100%;
+					height: 100%;
+					border-radius: 8px;
+					padding: 15px 100px 13px 25px;
+					
+					font-family: 'Maza';
+					font-size: 16px;
+					color: var(--color-text);
+
+					&::placeholder {
+						font-family: 'Maza';
+						font-size: 16px;
+						color: rgba(52, 58, 63, .5);
+					}
+				}
+
+				&__button {
+					width: 80px;
+					height: 40px;
+					position: absolute;
+					top: 3px;
+					right: 3px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 4px;
+					background: var(--color-hover);
+
+					font-family: 'Maza';
+					font-size: 14px;
+					color: #fff;
+					cursor: pointer;
+				}
+
+			} // search
+
+			.header-socials {
+				
+				flex-basis: 106px;
+				height: 100%;
+				display: flex;
+				gap: 10px;
+				margin-left: 8px;
+
+				a {
+					display: block;
+					width: 48px;
+					height: 100%;
+					border-radius: 4px;
+					background-color: #F4F4F4;
+					
+					transition: .33s;
+				}
+
+				&__tg {
+					
+					background-image: url('../images/dest/icons/socials/tg.svg');
+					background-repeat: no-repeat;
+					background-position: 45% 50%;
+
+					&:hover {
+						background-image: url('../images/dest/icons/socials/tg_hover.svg');
+					}
+				}
+
+				&__whatsapp {
+					
+					background-image: url('../images/dest/icons/socials/whatsapp.svg');
+					background-repeat: no-repeat;
+					background-position: center;
+
+					&:hover {
+						background-image: url('../images/dest/icons/socials/whatsapp_hover.svg');
+					}
+				}
+			}
+
+		} // header-center-second
+
+	} // header-center
+
+	.header-logo {
+
+		&__img {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
 
 } // header
