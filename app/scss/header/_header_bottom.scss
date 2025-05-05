@@ -1,0 +1,55 @@
+.header-bottom {
+
+	position: relative;
+	overflow: hidden;
+
+	color: #fff;
+
+	background: #672870;
+	background: linear-gradient(90deg,rgba(103, 40, 112, 1) 20%, rgba(79, 224, 255, 1) 100%);
+
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		content: '';
+		width: 767px;
+		height: 706px;
+		background-image: url('../../images/dest/gamepad.png');
+		background-repeat: no-repeat;
+		background-size: 70%;
+		background-position-y: -10%;
+	}
+
+	.container {
+		padding: 80px 100px;
+	}
+
+	&__title {
+
+		max-width: 730px;
+		margin-bottom: 30px;
+
+		font-family: 'TenorSans';
+		font-size: 32px;
+		line-height: 36px;
+	}
+
+	&__text {
+
+		max-width: 640px;
+		margin-bottom: 30px;
+
+		font-family: 'TenorSans';
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	&__button {
+		padding: 11px 40px;
+
+		color: #672870;
+		background: #fff;
+	}	
+}
