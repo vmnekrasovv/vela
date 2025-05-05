@@ -1,0 +1,14 @@
+.header-center {
+
+	padding: 16px 0 24px;
+	
+	.container {
+		display: flex;	
+	}
+
+	&-first {
+		flex-basis: 115px;
+	}
+
+
+} // header-center

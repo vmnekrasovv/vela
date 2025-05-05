@@ -1,0 +1,15 @@
+.header-center-second {
+	
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 900px;
+	gap: 16px;
+
+
+	&-top {
+		display: flex;
+		height: 48px;
+		gap: 16px;
+	}
+
+} // header-center-second

@@ -1,0 +1,36 @@
+.header-center-third {
+
+	flex-basis: 168px;
+	display: flex;
+	justify-content: center;
+
+	.change-language {
+		
+		width: 80px;
+		height: 48px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__icon {
+			width: 24px;
+			height: 24px;
+			display: block;
+			background: url('../images/dest/icons/earth.svg') no-repeat;
+		}
+
+		span {
+			font-family: 'Maza';
+			font-size: 16px;
+			text-transform: uppercase;
+			color: rgba(52, 58, 63, .4);
+			cursor: pointer;
+			
+			&.active,
+			&.separator {
+				color: var(--color-text);
+			}
+		}
+	} // change-language
+
+} // header-center-third

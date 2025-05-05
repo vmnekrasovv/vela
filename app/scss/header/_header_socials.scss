@@ -1,0 +1,44 @@
+.header-socials {
+	
+	flex-basis: 106px;
+	height: 100%;
+	display: flex;
+	gap: 10px;
+	margin-left: 8px;
+
+	a {
+		display: block;
+		width: 48px;
+		height: 100%;
+		border-radius: 4px;
+		background-color: #F4F4F4;
+		
+		transition: .33s;
+
+		&:hover {
+			background-color: #D4D9DD;
+		}
+	}
+
+	&__tg {
+		
+		background-image: url('../images/dest/icons/socials/tg.svg');
+		background-repeat: no-repeat;
+		background-position: 45% 50%;
+
+		&:hover {
+			background-image: url('../images/dest/icons/socials/tg_hover.svg');
+		}
+	}
+
+	&__whatsapp {
+		
+		background-image: url('../images/dest/icons/socials/whatsapp.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&:hover {
+			background-image: url('../images/dest/icons/socials/whatsapp_hover.svg');
+		}
+	}
+} // header-socials

@@ -1,0 +1,64 @@
+.header-tags {
+	
+	height: 42px;
+	display: flex;
+	gap: 20px;
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex: 1 0 auto;
+		gap: 10px;
+		padding: 12px 15px;
+		border-radius: 8px;
+		background: #F4f4f4;
+
+		font-family: 'Maza';
+		font-size: 16px;
+
+		transition: .33s;
+
+		&::before {
+			
+			display: block;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background-repeat: no-repeat;
+
+			transition: .33s;
+			opacity: .5;
+
+		}
+
+		&.button-promo::before {
+			background-image: url('../images/dest/icons/header_tags/promo.svg');
+		}
+
+		&.button-offer::before {
+			background-image: url('../images/dest/icons/header_tags/offer.svg');
+		}
+
+		&.button-gifts::before {
+			background-image: url('../images/dest/icons/header_tags/gifts.svg');
+		}
+
+		&.button-events::before {
+			background-image: url('../images/dest/icons/header_tags/events.svg');
+		}
+
+		&.button-brands::before {
+			background-image: url('../images/dest/icons/header_tags/brands.svg');
+		}
+
+		&:hover {
+			color: var(--color-hover);
+
+			&::before {
+				opacity: 1;
+			}
+		}
+
+	} // header-tags__button
+} // header-tags

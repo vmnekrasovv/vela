@@ -1,0 +1,19 @@
+.burger {
+
+	width: 100px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	background: var(--color-hover);
+
+	cursor: pointer;
+
+	&__element {
+		width: 41px;
+		height: 16px;
+		background: url('../images/dest/icons/burger.svg') no-repeat;
+	}
+
+} // burger
