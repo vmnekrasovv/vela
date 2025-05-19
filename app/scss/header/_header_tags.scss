@@ -62,3 +62,26 @@
 
 	} // header-tags__button
 } // header-tags
+
+.header-tags-menu {
+
+	display: none;
+	position: absolute;
+	top: 130px;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	z-index: 1;
+
+	box-shadow: 0 0 12px -5px #777;
+	border-radius: 8px;
+	background: #fff;
+
+	&.active {
+		display: block;
+	}
+
+	& ul {
+		list-style-type: none;
+	}
+}
