@@ -63,25 +63,146 @@
 	} // header-tags__button
 } // header-tags
 
+
 .header-tags-menu {
 
 	display: none;
 	position: absolute;
 	top: 130px;
 	left: 0;
-	width: 100%;
-	height: 500px;
+	//	width: 100%;
 	z-index: 1;
+	padding: 30px;
 
 	box-shadow: 0 0 12px -5px #777;
 	border-radius: 8px;
 	background: #fff;
 
 	&.active {
-		display: block;
+		display: flex;
+		gap: 40px;
+	}
+
+	&[data-attr="menu-gifts"] {
+		width: 100%;
+		padding-left: 0;
+		padding-bottom: 50px;
 	}
 
 	& ul {
 		list-style-type: none;
 	}
 }
+
+.tags-menu-first {
+	flex: 340px 1 0;
+	max-width: 340px;
+
+	&__element {
+		padding: 13px 20px 13px 30px;
+		border-bottom: 1px solid #F3F3F3;
+		transition: .3s;
+		display: flex;
+		align-items: center;
+		font-family: 'Maza';
+		cursor: pointer;
+
+		&::before {
+			display: block;
+			content: '';
+			width: 24px;
+			height: 24px;
+			margin-right: 16px;
+		}
+
+		&.element-whom {
+			&::before {
+				background: url('../../images/dest/icons/header_tags/menu/whom.svg') center no-repeat;
+			}
+		}
+
+		&.element-reason {
+			&::before {
+				background: url('../../images/dest/icons/header_tags/menu/reason.svg') center no-repeat;	
+			}
+		}
+
+		&.element-filling {
+			&::before {
+				background: url('../../images/dest/icons/header_tags/menu/filling.svg') center no-repeat;
+			}
+		}
+
+		span {
+			flex: auto;
+		}
+
+		&::after {
+			display: block;
+			content: '';
+			width: 12px;
+			height: 12px;
+			border: 1px solid var(--color-text);
+			border-left-color: transparent;
+			border-bottom-color: transparent;
+			transform: rotate(45deg);
+			transition: .3s;
+		}
+
+		&:hover {
+			background-color: #F3F3F3;
+
+			&::after {
+				border: 1px solid rgba(72, 136, 255, 0.5);
+				border-left-color: transparent;
+				border-bottom-color: transparent;
+			}
+		}
+
+	} // tags-menu-first__element
+} // tags-menu-first
+
+.tags-menu-second {
+
+	&__element {
+		
+		display: none;
+
+		&.active {
+			display: block;
+		}
+
+	} // .tags-menu-second__element
+
+	&__title {
+		font-size: 30px;
+		margin-bottom: 15px;
+		font-family: 'Maza';
+		font-weight: 400;
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+
+		&__element {
+
+			padding: 3px;
+			
+			font-family: 'Maza';
+
+			span {
+				color: rgba(52, 58, 63, 0.5);
+			}
+
+			&:hover,
+			&:hover > span {
+				color: var(--color-hover);
+				cursor: pointer;
+				transition: .3s;
+			}
+		}
+	}
+
+} // tags-menu-second
