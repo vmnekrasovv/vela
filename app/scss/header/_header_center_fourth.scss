@@ -58,12 +58,32 @@
 
 		&__basket {
 
+			position: relative;
+
 			&::before {
 				background: url('../images/dest/icons/user/basket.svg') no-repeat;
 			}
 
 			&:hover::before {
 				background: url('../images/dest/icons/user/basket_hover.svg') no-repeat;	
+			}
+
+			span {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				top: -9px;
+				right: -9px;
+
+				border-radius: 100%;
+				background: var(--color-hover);
+			
+				font-family: 'Maza';
+				font-size: 13px;
+				color: #fff;
 			}
 		}
 	

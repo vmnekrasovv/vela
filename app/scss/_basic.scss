@@ -104,3 +104,8 @@ img {
 	height: auto;
 	object-fit: cover;
 }
+
+h1 {
+	color: var(--color-hover);
+	text-shadow: 1px 1px #ccc;
+}
