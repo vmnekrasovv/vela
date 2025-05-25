@@ -36,5 +36,13 @@
 
 		//------
 
+		$(window).on('scroll', function(e){
+			if($(this).scrollTop() > $('.header-center').height()){
+				$('.header').addClass('scroll');
+			} else {
+				$('.header').removeClass('scroll');
+			}
+		});
+
 	});
 })(jQuery);

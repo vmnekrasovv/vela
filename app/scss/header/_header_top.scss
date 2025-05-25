@@ -50,3 +50,7 @@
 	} // phone
 
 } // header-top
+
+.header.scroll {
+	.header-top { display: none; }
+}

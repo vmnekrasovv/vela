@@ -109,3 +109,13 @@ h1 {
 	color: var(--color-hover);
 	text-shadow: 1px 1px #ccc;
 }
+
+@keyframes slide-in {
+  from {
+    top: -200px;
+  }
+
+  to {
+    top: 0;
+  }
+}
