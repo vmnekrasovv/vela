@@ -1,5 +1,7 @@
 (function($){
 	$(document).ready(function(){ 
+
+		let windowWidth;
 		
 		$('.header-tags__button').on('click', function(e){
 			
@@ -37,12 +39,81 @@
 		//------
 
 		$(window).on('scroll', function(e){
+
+			if(window.innerWidth < 768) return false;
+
 			if($(this).scrollTop() > $('.header-center').height()){
+				console.log( window.innerWidth);
 				$('.header').addClass('scroll');
 			} else {
 				$('.header').removeClass('scroll');
 			}
 		});
+
+		//-----
+
+
+	// контейнеры
+
+		let headerTopContainer 			= $('.header-top .container');
+		
+		let headerCenterFirst 			= $('.header-center-first');
+		let headerCenterSecond 			= $('.header-center-second');
+		let headerCenterSecondTop 		= $('.header-center-second-top');
+		let headerCenterSecondBottom 	= $('.header-center-second-bottom');
+		let headerCenterThird 			= $('.header-center-third');
+		let headerCenterFourth 			= $('.header-center-fourth');
+
+		let userButtons					= $('.user-buttons');
+
+		let headerCenterMobileTop 		= $('.header-center-mobile-top');
+		let mobileTopLeft 				= $('.mobile-top-left');
+		let mobileTopCenter 			= $('.mobile-top-center');
+		let mobileTopRight 				= $('.mobile-top-right');
+		let headerCenterMobileCenter 	= $('.header-center-mobile-center');
+		let headerCenterMobileBottom 	= $('.header-center-mobile-bottom');
+
+	// элементы
+
+		let location 		= $('.location');
+		let worktime 		= $('.worktime');
+		let headerTopMenu 	= $('.headerTopMenu');
+
+		let headerLogo 		= $('.header-logo');
+		let	burger			= $('.burger');
+		let search			= $('.search');
+		let headerSocials 	= $('.header-socials');
+
+		let headerTags 		= $('.header-tags');
+		let headerTagsMenus = $('.header-tags-menus');
+
+		let changeLanguage 	= $('.change-language');
+
+		let buttonLike		= $('.button-like');
+		let buttonProfile	= $('.button-profile');
+		let buttonBasket	= $('.button-basket');
+		let configureComp	= $('.configure-computer');
+
+		$(window).on('load resize', function(){
+
+			windowWidth = window.innerWidth;
+
+			if(windowWidth < 768){
+				
+				headerTopContainer.prepend(changeLanguage);
+
+				mobileTopLeft.append(burger, buttonProfile);
+				mobileTopCenter.append(headerLogo);
+				mobileTopRight.append(buttonLike, buttonBasket);
+
+			} else {
+				
+				changeLanguage.prependTo(headerCenterThird);
+			}
+
+		});
+
+
 
 	});
 })(jQuery);

@@ -5,105 +5,123 @@
 	gap: 16px;
 	flex-direction: column;
 
-	.user-buttons {
-		height: 48px;
-		display: flex;
-		gap: 16px;
+} // header-center-fourth
 
-		a {
-			width: 48px;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border-radius: 4px;
-			border: 1px solid #D3D3D3;
-			transition: .33s;
+.user-buttons {
 
-			&::before {
-				display: block;
-				content: '';
-				width: 24px;
-				height: 24px;
-				transition: .33s;
-			}
+	height: 48px;
+	display: flex;
+	gap: 16px;
 
-			&:hover {
-				border-color: #CDBECD;
-			}
+} // user-buttons
 
-		} // button
+.user-buttons__button {
+	width: 48px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	border: 1px solid #D3D3D3;
+	transition: .33s;
 
-		&__like {
-
-			&::before {
-				background: url('../images/dest/icons/user/like.svg') no-repeat;
-			}
-
-			&:hover::before {
-				background: url('../images/dest/icons/user/like_hover.svg') no-repeat;	
-			}
-		}
-
-		&__profile {
-
-			&::before {
-				background: url('../images/dest/icons/user/profile.svg') no-repeat;
-			}
-
-			&:hover::before {
-				background: url('../images/dest/icons/user/profile_hover.svg') no-repeat;	
-			}
-		}
-
-		&__basket {
-
-			position: relative;
-
-			&::before {
-				background: url('../images/dest/icons/user/basket.svg') no-repeat;
-			}
-
-			&:hover::before {
-				background: url('../images/dest/icons/user/basket_hover.svg') no-repeat;	
-			}
-
-			span {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 25px;
-				height: 25px;
-				position: absolute;
-				top: -9px;
-				right: -9px;
-
-				border-radius: 100%;
-				background: var(--color-hover);
-			
-				font-family: 'Maza';
-				font-size: 13px;
-				color: #fff;
-			}
-		}
-	
-	} // user-buttons
-
-	.configure-computer {
-		
-		height: 42px;
-		color: var(--color-hover);
-		background: #F4F4F4;
-		border-radius: 8px;
-		transition: .33s;
-
-		&:hover {
-			color: #fff;
-			background: var(--color-hover);
-		}
+	@media (max-width: 768px) {
+		width: 40px;
+		height: 40px;
 	}
 
-} // header-center-fourth
+	&::before {
+		display: block;
+		content: '';
+		width: 24px;
+		height: 24px;
+		transition: .33s;
+
+		@media (max-width: 768px) {
+			width: 20px;
+			height: 20px;
+		}
+
+	}
+
+	&:hover {
+		border-color: #CDBECD;
+	}
+
+} // user-buttons__button
+
+.button-like {
+
+	&::before {
+		background: url('../images/dest/icons/user/like.svg') no-repeat;
+		background-size: 20px;
+	}
+
+	&:hover::before {
+		background: url('../images/dest/icons/user/like_hover.svg') no-repeat;
+		background-size: 20px;	
+	}
+}
+
+.button-profile {
+
+	&::before {
+		background: url('../images/dest/icons/user/profile.svg') no-repeat;
+		background-size: 20px;
+	}
+
+	&:hover::before {
+		background: url('../images/dest/icons/user/profile_hover.svg') no-repeat;
+		background-size: 20px;	
+	}
+}
+
+.button-basket {
+
+	position: relative;
+
+	&::before {
+		background: url('../images/dest/icons/user/basket.svg') no-repeat;
+		background-size: 20px;
+	}
+
+	&:hover::before {
+		background: url('../images/dest/icons/user/basket_hover.svg') no-repeat;	
+		background-size: 20px;
+	}
+
+	span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: -9px;
+		right: -9px;
+
+		border-radius: 100%;
+		background: var(--color-hover);
+	
+		font-family: 'Maza';
+		font-size: 13px;
+		color: #fff;
+	}
+}
+
+.configure-computer {
+		
+	height: 42px;
+	color: var(--color-hover);
+	background: #F4F4F4;
+	border-radius: 8px;
+	transition: .33s;
+
+	&:hover {
+		color: #fff;
+		background: var(--color-hover);
+	}
+} // configure-computer
 
 .header.scroll {
 	.configure-computer {

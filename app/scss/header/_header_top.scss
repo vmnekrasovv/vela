@@ -5,6 +5,10 @@
 	font-family: 'Maza';
 	background: #F4F4F4;
 
+	@media (max-width: 768px) {
+		padding: 0;
+	}
+
 	.container {
 		display: flex;
 		justify-content: space-between;

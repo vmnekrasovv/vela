@@ -10,10 +10,21 @@
 
 	cursor: pointer;
 
+	@media (max-width: 768px) {
+		width: 40px;
+		height: 40px;
+	}
+
 	&__element {
 		width: 41px;
 		height: 16px;
 		background: url('../images/dest/icons/burger.svg') no-repeat;
+
+		@media (max-width: 768px) {
+			width: 27px;
+			height: 15px;
+			background-size: 27px 15px;
+		}
 	}
 
 } // burger
