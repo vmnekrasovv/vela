@@ -72,12 +72,18 @@
 		let mobileTopRight 				= $('.mobile-top-right');
 		let headerCenterMobileCenter 	= $('.header-center-mobile-center');
 		let headerCenterMobileBottom 	= $('.header-center-mobile-bottom');
+		let mobileBottomFirst			= $('.mobile-bottom-first');
+		let mobileBottomFirstLeft		= $('.mobile-bottom-first-left');
+		let mobileBottomFirstRight		= $('.mobile-bottom-first-right');
+		let mobileBottomSecond			= $('.mobile-bottom-second');
+		let mobileBottomThird			= $('.mobile-bottom-third');
+		let mobileBottomFourth			= $('.mobile-bottom-fourth');
 
 	// элементы
 
 		let location 		= $('.location');
 		let worktime 		= $('.worktime');
-		let headerTopMenu 	= $('.headerTopMenu');
+		let headerTopMenu 	= $('.header-top-menu');
 
 		let headerLogo 		= $('.header-logo');
 		let	burger			= $('.burger');
@@ -105,6 +111,17 @@
 				mobileTopLeft.append(burger, buttonProfile);
 				mobileTopCenter.append(headerLogo);
 				mobileTopRight.append(buttonLike, buttonBasket);
+
+				headerCenterMobileCenter.append(search);
+
+				mobileBottomFirstLeft.append(location, worktime);
+				mobileBottomFirstRight.append(headerSocials);
+
+				mobileBottomSecond.append(headerTags);
+
+				mobileBottomThird.append(configureComp);
+
+				mobileBottomFourth.append(headerTopMenu);
 
 			} else {
 				
