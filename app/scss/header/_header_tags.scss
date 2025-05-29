@@ -4,7 +4,7 @@
 	display: flex;
 	gap: 20px;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		height: auto;
 		display: flex;
 		flex-direction: column;
@@ -27,10 +27,12 @@
 
 		transition: .33s;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			height: auto;		
 			align-items: center;
 			justify-content: flex-start;
+			gap: 17px;
+			padding: 10px 13px;
 		}
 
 		&::before {
@@ -44,26 +46,36 @@
 			transition: .33s;
 			opacity: .5;
 
+			@media (max-width: 1400px) {
+				width: 24px;
+				height: 24px;
+			}
+
 		}
 
 		&.button-promo::before {
 			background-image: url('../images/dest/icons/header_tags/promo.svg');
+			background-size: 100%;
 		}
 
 		&.button-offer::before {
 			background-image: url('../images/dest/icons/header_tags/offer.svg');
+			background-size: 100%;
 		}
 
 		&.button-gifts::before {
 			background-image: url('../images/dest/icons/header_tags/gifts.svg');
+			background-size: 100%;
 		}
 
 		&.button-events::before {
 			background-image: url('../images/dest/icons/header_tags/events.svg');
+			background-size: 100%;
 		}
 
 		&.button-brands::before {
 			background-image: url('../images/dest/icons/header_tags/brands.svg');
+			background-size: 100%;
 		}
 
 		&:hover {
@@ -96,7 +108,7 @@
 		display: flex;
 		gap: 40px;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			display: none;
 		}
 	}

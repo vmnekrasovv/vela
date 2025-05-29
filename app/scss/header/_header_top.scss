@@ -5,7 +5,7 @@
 	font-family: 'Maza';
 	background: #F4F4F4;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		padding: 0;
 	}
 
@@ -41,7 +41,7 @@
 		margin-right: 4px;
 		background: url('../images/dest/icons/location.svg') no-repeat;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			margin-right: 8px;
 		}
 	}
@@ -72,16 +72,23 @@
 	font-family: 'Maza';
 }
 
+.location,
+.worktime {
+	@media (max-width: 1400px) {
+		font-size: 16px;
+	}
+}
+
 .worktime {
 	
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		display: flex;
 		align-items: center;
 		gap: 8px;
 	}
 
 	&::before {
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			width: 16px;
 			height: 16px;
 			display: block;
@@ -96,12 +103,13 @@
 	gap: 16px;
 	font-family: 'Maza';
 
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		flex-direction: column;
+		gap: 0;
 	}
 
 	a {
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			padding-bottom: 7px;
 			margin-bottom: 10px;
 			border-bottom: 1px solid #E8E8E8;

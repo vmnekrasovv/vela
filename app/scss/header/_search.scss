@@ -6,7 +6,7 @@
 	border-radius: 8px;
 	border: 1px solid rgba(72, 136, 255, .2);
 
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		display: flex;
 		align-items: center;
 	}
@@ -22,7 +22,7 @@
 		font-size: 16px;
 		color: var(--color-text);
 
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 
 			padding: 15px 100px 13px 15px;
 			font-size: 14px;
@@ -34,7 +34,7 @@
 			font-size: 16px;
 			color: rgba(52, 58, 63, .5);
 
-			@media (max-width: 768px) {
+			@media (max-width: 1400px) {
 				font-size: 14px;
 			}
 		}
@@ -66,12 +66,12 @@
 			justify-content: center;
 			align-items: center;
 
-			@media (max-width: 768px) {
+			@media (max-width: 1400px) {
 				display: none;
 			}
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			width: 40px;
 			height: 40px;
 		}
@@ -83,7 +83,7 @@
 			height: 24px;
 			background: url('../../images/dest/icons/search.svg') no-repeat;
 			
-			@media (max-width: 768px) {
+			@media (max-width: 1400px) {
 				display: block;
 			}
 		}

@@ -25,7 +25,7 @@
 	border: 1px solid #D3D3D3;
 	transition: .33s;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		width: 40px;
 		height: 40px;
 	}
@@ -37,7 +37,7 @@
 		height: 24px;
 		transition: .33s;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			width: 20px;
 			height: 20px;
 		}
@@ -54,12 +54,18 @@
 
 	&::before {
 		background: url('../images/dest/icons/user/like.svg') no-repeat;
-		background-size: 20px;
+		
+		@media (max-width: 1400px) {
+			background-size: 20px;
+		}
 	}
 
 	&:hover::before {
 		background: url('../images/dest/icons/user/like_hover.svg') no-repeat;
-		background-size: 20px;	
+		
+		@media (max-width: 1400px) {
+			background-size: 20px;
+		}
 	}
 }
 
@@ -67,12 +73,18 @@
 
 	&::before {
 		background: url('../images/dest/icons/user/profile.svg') no-repeat;
-		background-size: 20px;
+		
+		@media (max-width: 1400px) {
+			background-size: 20px;
+		}
 	}
 
 	&:hover::before {
 		background: url('../images/dest/icons/user/profile_hover.svg') no-repeat;
-		background-size: 20px;	
+		
+		@media (max-width: 1400px) {
+			background-size: 20px;
+		}
 	}
 }
 
@@ -82,12 +94,18 @@
 
 	&::before {
 		background: url('../images/dest/icons/user/basket.svg') no-repeat;
-		background-size: 20px;
+		
+		@media (max-width: 1400px) {
+			background-size: 20px;
+		}
 	}
 
 	&:hover::before {
 		background: url('../images/dest/icons/user/basket_hover.svg') no-repeat;	
-		background-size: 20px;
+		
+		@media (max-width: 1400px) {
+			background-size: 20px;
+		}
 	}
 
 	span {
@@ -117,7 +135,7 @@
 	border-radius: 8px;
 	transition: .33s;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		height: 48px;
 		margin-bottom: 40px;
 	}

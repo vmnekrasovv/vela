@@ -12,7 +12,7 @@
 	}
 
 
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		display: none;
 	}
 
@@ -32,7 +32,7 @@
 		box-shadow: 0px 0px 11px -5px #777;
 		animation: .3s slide-in forwards;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1400px) {
 			display: none;
 		}
 
@@ -45,14 +45,14 @@
 .header-center-mobile {
 
 	display: none;
-	@media (max-width: 768px) {
+	@media (max-width: 1400px) {
 		display: block;
 	}
 
 	.container {
 		display: flex;
 		flex-direction: column;
-		padding-top: 20px;
+		padding-top: 10px;
 		padding-bottom: 20px;
 	}
 
@@ -96,6 +96,15 @@
 		}
 	}
 
+}
+
+.header-center-mobile-bottom {
+	display: none;
+
+	&.active {
+		min-height: 100vh;
+		display: block;
+	}
 }
 
 .mobile-bottom-first {

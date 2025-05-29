@@ -40,7 +40,7 @@
 
 		$(window).on('scroll', function(e){
 
-			if(window.innerWidth < 768) return false;
+			if(window.innerWidth < 1400) return false;
 
 			if($(this).scrollTop() > $('.header-center').height()){
 				console.log( window.innerWidth);
@@ -56,6 +56,10 @@
 	// контейнеры
 
 		let headerTopContainer 			= $('.header-top .container');
+		let headerTopLeft				= $('.header-top-left');
+		let headerTopRight				= $('.header-top-right');
+		let headerTopCenter				= $('.header-top-center');
+
 		
 		let headerCenterFirst 			= $('.header-center-first');
 		let headerCenterSecond 			= $('.header-center-second');
@@ -82,6 +86,7 @@
 	// элементы
 
 		let location 		= $('.location');
+		let phone			= $('.phone');
 		let worktime 		= $('.worktime');
 		let headerTopMenu 	= $('.header-top-menu');
 
@@ -104,9 +109,10 @@
 
 			windowWidth = window.innerWidth;
 
-			if(windowWidth < 768){
+			if(windowWidth < 1400){
 				
-				headerTopContainer.prepend(changeLanguage);
+				headerTopLeft.prepend(changeLanguage);
+				headerTopRight.prepend(phone);
 
 				mobileTopLeft.append(burger, buttonProfile);
 				mobileTopCenter.append(headerLogo);
@@ -126,11 +132,39 @@
 			} else {
 				
 				changeLanguage.prependTo(headerCenterThird);
+
+				phone.appendTo(headerTopLeft);
+
+				burger.prependTo(headerCenterSecondTop);
+
+				headerLogo.prependTo(headerCenterFirst);
+
+				buttonLike.prependTo(userButtons);
+				buttonLike.after(buttonProfile);
+				buttonBasket.appendTo(userButtons);
+
+				burger.after(search);
+
+				location.prependTo(headerTopLeft);
+				worktime.appendTo(headerTopCenter);
+
+				search.after(headerSocials);
+
+				headerTags.prependTo(headerCenterSecondBottom);
+
+				userButtons.after(configureComp);
+
+				headerTopMenu.appendTo(headerTopRight);
 			}
 
 		});
 
+		// ------
 
+		$('.burger').on('click', function(){
+			$(this).toggleClass('active');
+			headerCenterMobileBottom.toggleClass('active');
+		});
 
 	});
 })(jQuery);
